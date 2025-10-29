@@ -66,7 +66,7 @@ const ServicesSection = () => {
   };
 
   return (
-    <div className="min-h-screen  p-8">
+    <div className="min-h-screen py-20 p-8">
       <div className="max-w-4xl mx-auto">
         {/* Section Header */}
         <div className="mb-12">

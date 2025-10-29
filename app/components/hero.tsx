@@ -65,7 +65,7 @@ export default function Hero() {
   return (
     <section ref={sectionRef} className="w-full h-full" style={{ backgroundColor: colors.bg }}>
       <motion.div 
-        className="max-w-2xl mx-auto mt-28"
+        className="md:max-w-2xl  w-full mx-4 md:mx-auto mt-28"
         variants={container}
         initial="hidden"
         animate="show"
