@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #f9f9f9;
   --foreground: #171717;
 }
 
@@ -56,3 +56,10 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
   font-display: swap;
 } 
+@keyframes pulse-glass {
+  0%, 100% { box-shadow: 0 0 10px rgba(255,255,255,0.2); }
+  50% { box-shadow: 0 0 25px rgba(255,255,255,0.4); }
+}
+.animate-glass {
+  animation: pulse-glass 2.5s ease-in-out infinite;
+}

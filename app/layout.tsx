@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-
-
+import LenisProvider from "./components/LenisProvider";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,7 +17,7 @@ export default function RootLayout({
       <body
         className={` antialiased`}
       >
-        {children}
+        <LenisProvider>{children}</LenisProvider>
       </body>
     </html>
   );

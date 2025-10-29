@@ -14,11 +14,11 @@ export default function SocialIcons({ social }: { social: { x: string; youtube: 
   ];
 
   return (
-    <div className="flex items-center gap-5 mt-6 text-[1.4rem] text-black relative">
+    <div className="flex items-center gap-5 mt-6 text-[1.4rem] text-black relative ">
       {icons.map(({ id, icon, label, link }) => (
         <div
           key={id}
-          className="relative flex flex-col items-center justify-center"
+          className="relative flex flex-col items-center justify-center transition-transform duration-500 ease-out hover:rotate-6"
           onMouseEnter={() => setHovered(id)}
           onMouseLeave={() => setHovered(null)}
         >
