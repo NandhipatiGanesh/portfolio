@@ -22,5 +22,37 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+   font-family: "apercu", sans-serif;
 }
+h1, h2, h3, h4, h5, h6 {
+     font-family: "AeonikBold", sans-serif;
+     font-weight: 700;
+}
+@font-face {
+  font-family: "OktaNeue";
+  src: url("/fonts/okta-neue-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AeonikBold";
+  src: url("/fonts/apercu_bold_pro.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "RecoletaSemiBold";
+  src: url("/fonts/fonnts.com-recoleta-semibold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "apercu";
+  src: url("/fonts/apercu_medium_pro.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+} 
