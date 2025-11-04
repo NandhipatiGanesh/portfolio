@@ -26,7 +26,7 @@ export default function Tabs() {
     offset: ["start end", "end start"],
   });
 
-  const swingY = useTransform(scrollYProgress, [0, 0.5, 1], [200, 0, -200]);
+  const swingY = useTransform(scrollYProgress, [0, 0.5, 1], [40, 0, -40]);
   const opacity = useTransform(scrollYProgress, [0, 0.15, 0.85, 1], [0, 1, 1, 0]);
 
   return (
