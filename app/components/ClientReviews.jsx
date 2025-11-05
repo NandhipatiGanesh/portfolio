@@ -29,7 +29,7 @@ const reviews = [
 
 export default function ClientReviews() {
   return (
-    <section className="max-w-3xl mx-auto pt-20  px-6">
+    <section className="max-w-3xl mx-auto">
 
 
       <div className="space-y-10">

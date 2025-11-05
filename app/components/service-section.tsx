@@ -3,7 +3,7 @@ import  { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Sparkles, Share2, Smartphone, Edit3, ChevronUp } from 'lucide-react';
 
-const ServicesSection = () => {
+const Services = () => {
   const [openAccordion, setOpenAccordion] = useState(null);
 
   const services = [
@@ -69,22 +69,7 @@ const ServicesSection = () => {
     <div className="min-h-screen py-20 p-8">
       <div className="max-w-4xl mx-auto">
         {/* Section Header */}
-        <div className="mb-12">
-          <div className="flex items-center gap-2 mb-4">
-            <div className="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center">
-              <svg className="w-4 h-4 text-red-500" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M10 3.5L2 7v6c0 5.5 3.5 8.5 8 10 4.5-1.5 8-4.5 8-10V7l-8-3.5z"/>
-              </svg>
-            </div>
-            <span className="text-red-500 font-medium">Services</span>
-          </div>
-          <div className="flex items-start justify-between gap-8">
-            <h1 className="text-5xl font-bold text-gray-900">What we do.</h1>
-            <p className="text-gray-600 text-lg max-w-md mt-2">
-              Websites, apps, social, and copywriting, we're here to help you reach your goals.
-            </p>
-          </div>
-        </div>
+       
 
         {/* Accordions */}
         <div className="space-y-4">
@@ -272,4 +257,4 @@ const ServicesSection = () => {
   );
 };
 
-export default ServicesSection;
+export default Services;

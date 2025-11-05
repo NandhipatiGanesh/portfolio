@@ -3,10 +3,11 @@ import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion"
 import { tabs, personalInfo } from "../data";
 import { useRef, useState } from "react";
 import { useLenis } from "./LenisProvider";
-import ServicesSection from "./service-section";
+import ServicesSection from "./services";
 import ClientReviews from "./ClientReviews";
 import ConnectSection from "./ConnectSection";
-
+import TechStack from "./TechStack";
+import WorksSection from "./WorksSection";
 const container = {
   hidden: { opacity: 0 },
   show: { opacity: 1, transition: { staggerChildren: 0.04 } },
@@ -61,7 +62,7 @@ export default function Tabs() {
               className={`capitalize px-6 py-2 rounded-full  transition-all duration-500 relative overflow-hidden
               ${
                 isActive
-                  ? "text-black border-transparent bg-white/20 backdrop-blur-md shadow-lg before:absolute before:inset-0 before:rounded-full before:bg-gradient-to-r before:from-white/50 before:to-white/10 before:opacity-70 before:blur-[3px] before:z-[-1]"
+                  ? "text-white border-transparent bg-black shadow-lg "
                   : "text-gray-600 hover:text-black  bg-transparent"
               }
             `}
@@ -80,17 +81,14 @@ export default function Tabs() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 8 }}
             transition={{ duration: 0.25 }}
-            className="bg-white/5 p-6 rounded-lg "
+            className="bg-white/5 pt-4 md:pt-0 rounded-lg "
           >
             {(() => {
               switch (activeTab) {
                 case "works":
                   return (
                     <div>
-                      <h3 className="text-lg font-semibold">Ventures</h3>
-                      <p className="mt-2 text-gray-600">
-                        I explore products and startups, building small experimental projects and collaborating with founders to ship user-focused features.
-                      </p>
+                      <WorksSection />
                     </div>
                   );
                 case "services":
@@ -108,13 +106,7 @@ export default function Tabs() {
                 case "techstack":
                   return (
                     <div>
-                      <h3 className="text-lg font-semibold">Tech Stack</h3>
-                      <ul className="mt-2 text-gray-600 list-disc ml-5">
-                        <li>React / Next.js</li>
-                        <li>TypeScript</li>
-                        <li>Tailwind CSS</li>
-                        <li>Framer Motion</li>
-                      </ul>
+                      <TechStack />
                     </div>
                   );
                 case "connect":
